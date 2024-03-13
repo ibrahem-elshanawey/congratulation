@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-8">
+                    <div class="parent-tap zoomIn">
+                        <div class="img-show">
+                            <img src="img/صور-رسالة-التهنئة-الرمضانية.jpg" alt="" class="img-fluid" id="imgsrc">
+                        </div>
+                       
+                        <table class="table_class"
+                            id="hide_if_clicked">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="eid_4">للحصول على التهنئة الخاصة بكم</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="GInput" type="text" id="uName" placeholder="أكتب إسمك هنا"
+                                            autocomplete="off">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <!-- <div class="eid_5">للتحميل</div> -->
+                                        <button type="button" class="downloadBTN" id="next_button" disabled="true">إضغط
+                                            هنا</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <div class="swiper homeswiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img-small">
+                                    <img src="img/صور-رسالة-التهنئة-الرمضانية.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-small">
+                                    <img src="img/صور-رسالة-التهنئة-الرمضانية2.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-small">
+                                    <img src="img/صور-رسالة-التهنئة-الرمضانية3.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-small">
+                                    <img src="img/bg.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="home-nav">
+                        <div class="swiper-button-prev">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div id="single-particles-fs"><canvas class="particles-js-canvas-el" width="1911" height="996"
+            style="width: 100%; height: 100%;"></canvas></div>
+    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script>
+        var swiper = new Swiper(".homeswiper", {
+            slidesPerView: 3,
+            direction: "vertical",
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                click: true
+            },
+            speed: 2000,
+            loop: true,
+
+        });
+
+        $(document).ready(function () {
+            $('.img-small img').click(function () {
+                var imageUrl = $(this).attr('src');
+                $('.img-show').html('<img src="' + imageUrl + '" alt="Displayed Image" class="displayed-image img-fluid" id="imgsrc">');
+            });
+        });
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>
