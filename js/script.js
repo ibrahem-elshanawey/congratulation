@@ -33,7 +33,7 @@ window.addEventListener('load', function () {
             // White Bluish
             //context.fillStyle = "grey";
             context.fillStyle = "#FFF";
-            context.font = "75px GB";
+            context.font = "75px lamaSensbold";
             context.textAlign = "center";
             context.fillText(name, textX, textz);
 

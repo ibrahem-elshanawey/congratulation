@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "lamaSensmedium";
+    src: url("../fonts/lamaSens/LamaSans-Medium.woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "lamaSensbold";
+    src: url("../fonts/lamaSens/LamaSans-Bold.woff2");
+    font-weight: 900;
+}
+
 html {
     height: 100%;
 }
@@ -90,7 +102,7 @@ body {
 
 .eid_4 {
     margin-top: 30px;
-    font-family: 'GR';
+    font-family: 'lamaSensbold';
     color: #FFF;
     font-size: 25px;
     width: 100%;
@@ -100,7 +112,7 @@ body {
 .GInput {
     margin: 15px auto;
     box-sizing: border-box;
-    font-family: 'GR';
+    font-family: 'lamaSensbold';
     font-size: 22px;
     color: #243d7f;
     vertical-align: middle;
@@ -121,7 +133,7 @@ body {
 .downloadBTN {
     margin: 15px auto;
     padding: 10px 40px;
-    font-family: "GB" !important;
+    font-family: "lamaSensbold" !important;
     font-size: 22px;
     color: white;
     border-radius: 15px !important;
