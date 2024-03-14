@@ -5,23 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/Group 2028.svg" alt="" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://repoteq.com/">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://repoteq.com/Home/About">عن ريبوتك</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://repoteq.com/Home/Contact">اتصل بنا</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <section class="repoteq-header">
+        <div class="container">
+            <div class="text-repoteq-header ">
+                <h1>ريبوتك</h1>
+                <h2>لتقنية المعلومات</h2>
+            </div>
+        </div>
+    </section>
     <section id="blog">
         <div class="container">
             <div class="row">
-                <div class="col-lg-9 col-md-9 col-sm-8">
+                <div class="col-lg-9 col-md-9 col-sm-8 show-in-mobile">
                     <div class="parent-tap zoomIn">
                         <div class="img-show">
                             <img src="img/صور-رسالة-التهنئة-الرمضانية.jpg" alt="" class="img-fluid" id="imgsrc">
                         </div>
-                       
-                        <table class="table_class"
-                            id="hide_if_clicked">
+
+                        <table class="table_class" id="hide_if_clicked">
                             <tbody>
                                 <tr>
                                     <td>
@@ -81,13 +114,146 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-9 col-md-9 col-sm-8 show-in-desktop">
+                    <div class="parent-tap zoomIn">
+                        <div class="img-show">
+                            <img src="img/صور-رسالة-التهنئة-الرمضانية.jpg" alt="" class="img-fluid" id="imgsrc">
+                        </div>
+
+                        <table class="table_class" id="hide_if_clicked">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="eid_4">للحصول على التهنئة الخاصة بكم</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="GInput" type="text" id="uName" placeholder="أكتب إسمك هنا"
+                                            autocomplete="off">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <!-- <div class="eid_5">للتحميل</div> -->
+                                        <button type="button" class="downloadBTN" id="next_button" disabled="true">إضغط
+                                            هنا</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
             </div>
 
+        </div>
+    </section>
+    <section class="repoteq-service">
+        <div class="container">
+            <div class="header-services position-relative">
+                <h1>خدماتنا</h1>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="parent-service">
+                        <div class="img-service">
+                            <img src="img/Vector Smart Object.svg" alt="">
+                        </div>
+                        <a href="https://repoteq.com/Services/Web">الأنظمة والمواقع الالكترونية</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="parent-service">
+                        <div class="img-service">
+                            <img src="img/Vector Smart Object-5.svg" alt="">
+                        </div>
+                        <a href="https://repoteq.com/Services/Mobile">تطبيقات الهواتف الذكية</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="parent-service">
+                        <div class="img-service">
+                            <img src="img/Vector Smart Object-4.svg" alt="">
+                        </div>
+                        <a href="https://repoteq.com/Services/ERP">أنظمة موارد المؤسسات</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="parent-service">
+                        <div class="img-service">
+                            <img src="img/remote-working.svg" alt="" class="work-remote">
+                        </div>
+                        <a href="https://repoteq.com/Services/OutSource">خدمات التوظيف عن بعد</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="parent-service">
+                        <div class="img-service">
+                            <img src="img/Vector Smart Object-2.svg" alt="" class="test-img">
+                        </div>
+                        <a href="https://repoteq.com/Services/Testing">الإختبارات وضمان الجودة</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="parent-service">
+                        <div class="img-service">
+                            <img src="img/Vector Smart Object-3.svg" alt="">
+                        </div>
+                        <a href="https://repoteq.com/Services/Support">الدعم الفني والصيانة</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="img-footer">
+                        <img src="img/Group 2037.svg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="info-footer">
+                        <div class="info-link">
+                            <div class="img-info">
+                                <img src="img/Group 2039.svg" alt="">
+                            </div>
+                            <a href="https://repoteq.com">repoteq.com</a>
+                        </div>
+                        <div class="info-link">
+                            <div class="img-info">
+                                <img src="img/Page-1.svg" alt="">
+                            </div>
+                            <a href="info@repoteq.com">info@repoteq.com</a>
+                        </div>
+                        <div class="info-link">
+                            <div class="img-infos">
+                                <a href="https://www.instagram.com/invites/contact/?i=i03zj3zkqgn4&utm_content=f2c54hv"><img
+                                        src="img/Group 2040.svg" alt=""></a>
+                                <a href="https://www.facebook.com/repoteq?mibextid=avESrC"><img src="img/Group 2041.svg"
+                                        alt=""></a>
+                                <a href="https://www.linkedin.com/company/12634566/admin/feed/posts/"><img
+                                        src="img/Group 2042.svg" alt=""></a>
+                                <a href="https://youtube.com/@repoteq?si=FG7nazHe02vbg99r"><img src="img/Path 1100.svg"
+                                        alt="" class="youtube-img"></a>
+                            </div>
+                            <a href="info@repoteq.com">@repoteq</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <div id="single-particles-fs"><canvas class="particles-js-canvas-el" width="1911" height="996"
             style="width: 100%; height: 100%;"></canvas></div>
     <script src="js/jquery.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
         integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
