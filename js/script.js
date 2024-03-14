@@ -1,6 +1,5 @@
 window.addEventListener('load', function () {
-
-   var User_name = document.getElementById('uName');
+    User_name = document.getElementById('uName');
     User_name.addEventListener('keyup', function () {
         if (User_name.value != '' && User_name.value != ' ') {
             document.getElementById('next_button').removeAttribute("disabled");
@@ -8,7 +7,14 @@ window.addEventListener('load', function () {
             document.getElementById('next_button').setAttribute("disabled", "true");
         }
     });
-
+    User_names = document.getElementById('zName');
+    User_names.addEventListener('keyup', function () {
+        if (User_names.value != '' && User_names.value != ' ') {
+            document.getElementById('next_buttons').removeAttribute("disabled");
+        } else {
+            document.getElementById('next_buttons').setAttribute("disabled", "true");
+        }
+    });
 
     function downloadImg() {
         var img = new Image();
@@ -24,7 +30,7 @@ window.addEventListener('load', function () {
             context.canvas.height = img.height;
             context.drawImage(img, 0, 0, img.width, img.height);
             var name = document.getElementById("uName").value;
-
+            var name2 = document.getElementById("zName").value;
             var textX = (img.width) / 2 // here we get the width of name and put it at the center depend on width of (Name)
             var textY = (img.height / 2) + 340
             var textz = (img.height / 2) + 340
@@ -36,7 +42,7 @@ window.addEventListener('load', function () {
             context.font = "75px lamaSensbold";
             context.textAlign = "center";
             context.fillText(name, textX, textz);
-
+            context.fillText(name2, textX, textz);
             if (window.navigator.msSaveBlob) { // IE
                 var image = canvas.toDataURL("image/jpeg");
                 var blob = createBlob(image);
@@ -86,6 +92,10 @@ window.addEventListener('load', function () {
     };
     var downloadbutton=this.document.getElementById('next_button');
     downloadbutton.addEventListener('click',function () {
+        downloadImg();
+    })
+    var downloadbutton2=this.document.getElementById('next_buttons');
+    downloadbutton2.addEventListener('click',function () {
         downloadImg();
     })
     function createBlob(dataURL) {
